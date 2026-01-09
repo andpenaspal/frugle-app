@@ -1,11 +1,11 @@
 :root {
-  --primary: #FF9208;
-  --on-primary: #FFFFFF;
+  --primary: #ff9208;
+  --on-primary: #ffffff;
   --secondary: #084581;
-  --on-secondary: #FFFFFF;
-  --tertiary: #C7CBD6;
-  --text: #34363C;
-  --background: #FFFFFF;
+  --on-secondary: #ffffff;
+  --tertiary: #c7cbd6;
+  --text: #34363c;
+  --background: #ffffff;
 }
 
 * {
@@ -31,15 +31,21 @@ body {
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 1.5rem;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 16px;
+  width: 100px;
+  height: 100px;
+  background: #ffffff; /* White circle */
+  border-radius: 50%; /* Makes it perfectly circular */
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  margin: 0 auto 1.5rem; /* Center horizontally and spacing below */
+  padding: 12px; /* Space between circle edge and SVG */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional soft shadow for depth */
+}
+
+.logo img {
+  width: 100%; /* SVG scales nicely inside circle */
+  height: auto;
 }
 
 .hero h1 {
@@ -48,7 +54,7 @@ body {
 
 .tagline {
   font-size: 1.25rem;
-  margin: 0.5rem 0 2rem;
+  margin: 0.2rem 0 2rem;
 }
 
 /* CTA */
